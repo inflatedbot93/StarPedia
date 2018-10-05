@@ -8,9 +8,7 @@
 
 <!-- no navbar on the home page -->
 <?php //include_once ("./inc/navbar.php"); ?>
-
-<!-- leave this to the router -->
-
 <?php include_once ('./inc/home.php'); ?>
-<?php require_once('./inc/footer.php'); ?>
+
 </body>
+<?php require_once('./inc/footer.php'); ?>

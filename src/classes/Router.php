@@ -6,7 +6,7 @@
  * Time: 2:02 PM
  */
 
-class router
+class Router
 {
     /**
      * router constructor.
@@ -50,6 +50,15 @@ class router
     public function validateRoute($route):bool{
         if(!empty(trim($route,' '))){
             return true;
+        }
+        return false;
+    }
+
+    public function validateCurrentRoute():bool{
+        foreach($this->ROUTES as &$route){
+            if($route === $this->getCurrentRoute()){
+                return true;
+            }
         }
         return false;
     }

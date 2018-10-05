@@ -1,11 +1,21 @@
 <?php
 
-require_once ("./src/classes/router.php");
 
-$router = new router();
-$router->add('/locations');
+spl_autoload_register(function($className) {
+    include_once $_SERVER['DOCUMENT_ROOT'] . '/src/classes/' . $className . '.php';
+});
+
+// setup the routes that are valid
+
+$router = new Router();
+$router->add('/');
+$router->add('/home');
+$router->add('/index');
+
+// locations
+$router->add('/systems');
 
 var_dump($router->getRoutes());
+var_dump($router->validateCurrentRoute());
 
-var_dump($router->validateRoute(' / '));
 ?>
