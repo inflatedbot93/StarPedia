@@ -1,39 +1,39 @@
 *{
-	font-family: 'Electrolize', sans-serif;
-}
+     font-family: 'Electrolize', sans-serif;
+ }
 /*font-family: 'Electrolize', sans-serif;*/
 
 /*font-family: 'Orbitron', sans-serif;*/
 
 /* Header */
 #head {
-	text-align: center;
+    text-align: center;
     /*padding-top:240px; /* needed to remove this as the landing page sucks with it */
-	color:white;
-	font-family: 'Orbitron', sans-serif;
-	font-weight:300; }
+    color:white;
+    font-family: 'Orbitron', sans-serif;
+    font-weight:300; }
 #head.secondary { height:100px; min-height: 100px; padding-top:0px; }
 #head .lead {
-	font-family: 'Orbitron', sans-serif;
-	font-size:44px;
-	margin-bottom:6px;
-	color:white;
-	line-height:1.15em;
+    font-family: 'Orbitron', sans-serif;
+    font-size:44px;
+    margin-bottom:6px;
+    color:white;
+    line-height:1.15em;
 }
 #head .tagline {
-	color:rgba(255,255,255,0.75);
-	margin-bottom:25px;
+    color:rgba(255,255,255,0.75);
+    margin-bottom:25px;
 }
 #head .tagline a { color:#fff; }
 #head .btn { margin-bottom:10px;}
 #head .btn-default {
-	text-shadow: none;
-	background:transparent;
-	color:rgba(255,255,255,.5);
-	-webkit-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5);
-	-moz-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5);
-	box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5);
-	background: transparent;
+    text-shadow: none;
+    background:transparent;
+    color:rgba(255,255,255,.5);
+    -webkit-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5);
+    -moz-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5);
+    box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5);
+    background: transparent;
 }
 #head .btn-default:hover,
 #head .btn-default:focus { color:rgba(255,255,255,.8); -webkit-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8); -moz-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8); box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.8); background: transparent; }
@@ -41,8 +41,8 @@
 #head .btn-default.active { color:#fff; -webkit-box-shadow:inset 0px 0px 0px 3px #fff; -moz-box-shadow:inset 0px 0px 0px 3px #fff; box-shadow:inset 0px 0px 0px 3px #fff; background: transparent; }
 
 @media (max-width: 767px) {
-#head { min-height:420px; padding-top:160px; }
-#head .lead { font-size: 34px; }
+    #head { min-height:420px; padding-top:160px; }
+    #head .lead { font-size: 34px; }
 }
 
 
@@ -61,7 +61,7 @@
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 { font-family: 'Orbitron', sans-serif; }
-h1, .h1, h2, .h2, h3, .h3 { margin-top:30px; } 
+h1, .h1, h2, .h2, h3, .h3 { margin-top:30px; }
 blockquote { font-style: italic; font-family: Georgia; color:#999; margin:30px 0 30px; }
 label { color: #777; }
 .thin { font-weight:300; }
@@ -121,15 +121,15 @@ a.btn.btn-lg.btn-action{
     color:#333;
     background: #fcfcfc;
     border: 1px solid #fcfcfc;
- }
+}
 a.btn.btn-lg.btn-action:hover{
     color: #ff8e2c;
-	border: 1px solid #ff8e2c ;
+    border: 1px solid #ff8e2c ;
 }
 a.btn.btn-primary.btn-large,
 a.btn.btn-primary.btn-large:hover{
-	background: #333 ;
-	color: #ff8e2c;
+    background: #333 ;
+    color: #ff8e2c;
 }
 
 /************************************************************************/
@@ -143,7 +143,6 @@ input[type='search']{
     font-size: 14px;
     line-height: 14px;
     border: none;
-    margin: 25px;
 }
 
 /************************************************************************/
@@ -175,4 +174,44 @@ input[type='search']{
 
 .navbar-brand svg{
     color:white;
+}
+.navbar{
+    margin-bottom:400px;
+}
+
+
+.content{
+    margin-top: 109px;
+}
+/**{outline: 1px solid red;}*/
+input.search, button.search{
+    background: none;
+    color: #a8fffc;
+    border:1px solid #a8fffc;
+}
+input.search{
+    margin:0;
+}
+*:focus {
+    outline: none;
+    -moz-appearance:none;
+}
+
+
+
+
+input[type=text],input[type=search], textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    border: 1px solid #DDDDDD;
+    outline: none;
+
+}
+
+input[type=text]:focus,input[type=search]:focus, textarea:focus{
+    border: 1px solid #ff8e2c;
+    box-shadow: none;
+
 }
